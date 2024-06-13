@@ -40,3 +40,18 @@ function isPrime(n) {
     return true
 }
 
+function addPrimeNumbers(n) {
+    let primes = []
+    for (let i = 1; i <= n; i++) {
+        if (isPrime(i)) {
+            primes.push(i)
+        }
+    }
+
+    // Use setTimeout to defer the task of adding primes to the HTML element
+    setTimeout(() => {
+        primeNumbersElement.textContent = primes.join(', ')
+        alert('Calculation finished!')
+    }, 0)
+}
+
