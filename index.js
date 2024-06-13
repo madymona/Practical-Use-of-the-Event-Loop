@@ -48,9 +48,8 @@ function addPrimeNumbers(n) {
         }
     }
 
-    // Use setTimeout to defer the task of adding primes to the HTML element
     setTimeout(() => {
-        primeNumbersElement.textContent = primes.join(', ')
+        primeNumbers.textContent = primes.join(', ')
         alert('Calculation finished!')
     }, 0)
 }
