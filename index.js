@@ -47,10 +47,9 @@ function addPrimeNumbers(n) {
             primes.push(i)
         }
     }
-
     setTimeout(() => {
         primeNumbers.textContent = primes.join(', ')
         alert('Calculation finished!')
     }, 0)
 }
-
+addPrimeNumbers(100)
